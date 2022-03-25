@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-express-sequelize-mysql",
+  "version": "1.0.0",
+  "description": "$ mkdir nodejs-express-sequelize-mysql $ cd nodejs-express-sequelize-mysql",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/nodemon/bin/nodemon.js server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mariadb": "^2.5.6",
+    "mysql2": "^2.3.2",
+    "nodemon": "^2.0.14",
+    "sequelize": "^6.17.0"
+  }
+}

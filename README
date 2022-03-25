@@ -1,0 +1,44 @@
+https://www.bezkoder.com/vue-js-node-js-express-mysql-crud-example/
+https://www.bezkoder.com/node-js-express-sequelize-mysql/
+
+$ mkdir nodejs-express-sequelize-mysql
+$ cd nodejs-express-sequelize-mysql
+
+npm init
+
+npm install express sequelize mariadb body-parser cors --save
+
+
+npm run start
+
+
+
+npx sequelize-cli init
+
+    config/config.json   <--編集
+
+
+テーブル作成
+npx sequelize-cli model:generate \
+    --name tutorial \
+    --attributes title:string,description:string,published:string
+
+マイグレーションの実行
+npx sequelize-cli db:migrate
+
+
+
+
+Methods	    Urls	                Actions
+GET	    api/tutorials	            get all Tutorials
+GET	    api/tutorials/:id	        get Tutorial by id
+POST	api/tutorials	            add new Tutorial
+PUT	    api/tutorials/:id	        update Tutorial by id
+DELETE	api/tutorials/:id	        remove Tutorial by id
+DELETE	api/tutorials	            remove all Tutorials
+GET	    api/tutorials/published	    find all published Tutorials
+GET	    api/tutorials?title=[kw]	find all Tutorials which title contains 'kw'
+
+
+
+end

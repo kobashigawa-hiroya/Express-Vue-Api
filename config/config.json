@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "root",
+    "password": "",
+    "database": "letter_book",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "timezone":"+09:00"    
+  },
+  "test": {
+    "username": "dbuser",
+    "password": "gvc@2015",
+    "database": "express_mysql_sample",
+    "host": "127.0.0.1",
+    "dialect": "mariadb",
+    "timezone":"+09:00"    
+  },
+  "production": {
+    "username": "dbuser",
+    "password": "gvc@2015",
+    "database": "express_mysql_sample",
+    "host": "127.0.0.1",
+    "dialect": "mariadb",
+    "timezone":"+09:00"    
+  }
+}
